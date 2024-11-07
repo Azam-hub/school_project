@@ -1,0 +1,217 @@
+.event-head-container {
+    border: 1px solid #000;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 17px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.event-head-container .top-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.event-head-container .top-div .left {
+    align-self: center;
+}
+
+.event-head-container .top-div .right {
+    width: 280px;
+}
+
+.event-head-container .top-div .right label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.event-head-container .top-div .right input {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 6px 12px 6px 12px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.event-head-container .event-heads {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-head-container .event-head {
+    background-color: var(--main-blue);
+    padding: 30px 10px 6px 10px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin: 7px 3px;
+    position: relative;
+    min-width: 210px;
+}
+
+.event-head-container .event-head .date {
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 70px;
+}
+
+.event-head-container .event-head a {
+    color: #fff;
+}
+
+.event-head-container .event-head i.plus, .event-head-container .event-head i.angle, 
+.event-head-container .event-head i.edit-head, .event-head-container .event-head i.delete-head {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.event-head-container .event-head i.plus {
+    right: 85px;
+}
+
+.event-head-container .event-head i.edit-head {
+    right: 57px;
+}
+
+.event-head-container .event-head i.delete-head {
+    right: 30px;
+    
+}
+
+.event-head-container .event-head ul {
+    position: absolute;
+    background-color: var(--main-grey);
+    padding: 5px;
+    min-width: 160px;
+    border-radius: 4px;
+    top: 28px;
+    /* left: 10px; */
+    right: -134px;
+    display: none;
+    z-index: 10;
+    list-style: none
+}
+
+.event-head-container .event-head ul li {
+    position: relative;
+    padding: 30px 5px 5px 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+ 
+.event-head-container .event-head ul li i.edit, .event-head-container .event-head ul li i.delete {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.event-head-container .event-head ul li i.edit {
+    right: 29px;
+}
+
+.event-head-container .event-head .down {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-head-container .event-head .down .images {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    overflow-x: auto;
+    column-gap: 6px;
+    /* background-color: rgb(255, 255, 255); */
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-bottom: 6px;
+}
+
+.event-head-container .event-head .down img {
+    /* width: 190px; */
+    height: 110px;
+    /* margin-bottom: 6px; */
+}
+
+.add-event-head, .edit-event-head {
+    margin-top: 18px;
+}
+
+.edit-event-head {
+    display: none;
+}
+
+.edit-event-head form img {
+    display: block;
+    width: 130px;
+    margin-top: 17px;
+}
+
+form {
+    margin-top: 13px;
+}
+
+form input {
+    display: block;
+    width: 350px;
+    margin-top: 4px;
+    padding: 6px 12px 6px 12px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.file-label {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+form input[type=file] {
+    border: none;
+    padding: 6px 0;
+}
+
+form button {
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 13px;
+    font-size: 16px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 605px) {
+    .event-head-container .top-div {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .event-head-container .event-head {
+        width: 100%;
+    }
+    form input {
+        width: 100%;
+    }
+    .event-head-container .top-div .right {
+        width: 100%;
+    }
+}

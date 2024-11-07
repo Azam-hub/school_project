@@ -1,0 +1,204 @@
+section {
+    width: 96vw;
+    margin: 30px auto 50px auto;
+}
+
+section .container {
+    display: flex;
+}
+
+/* ###################################### Left Side ###################################### */
+
+section .container .left-side {
+    flex-basis: 78%;
+    /* background-color: red; */
+    padding: 15px;
+}
+
+section .container .left-side .main-head {
+    font-size: 42px;
+    text-shadow: 2px 2px 2px #000;
+    margin-left: 65px;
+    position: relative;
+}
+
+section .container .left-side .main-head::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 12px;
+    background-color: var(--main-blue);
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section .container .left-side .bunch {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+section .container .left-side .bunch video, 
+section .container .left-side .bunch img {
+    width: 90%;
+    margin: auto;
+}
+
+section .container .left-side .bunch h2 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 27px;
+}
+
+section .container .left-side .bunch p {
+    text-align: justify;
+    /* text-indent: 10%; */
+}
+
+/* ###################################### Left Side ###################################### */
+
+
+
+/* ###################################### Right Side ###################################### */
+
+section .container .right-side {
+    flex-basis: 22%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 14px;
+}
+
+/* ------------------ Event ------------------- */
+
+.right-side .event {
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 16px 12px;
+    border-radius: 6px;
+}
+
+.event .image {
+    width: 94%;
+    margin: auto;
+}
+
+.event .image img {
+    width: 100%;
+}
+
+.right-side .event .date-time {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+.right-side .event .date-time i {
+    position: relative;
+    top: 0px;
+    margin-right: 8px;
+}
+
+.right-side .event .date-time p {
+    font-size: 12px;
+}
+
+.right-side .event .description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.right-side .event .btn a {
+    padding: 6px 13px 6px 10px;
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-grey);
+    margin-top: 12px;
+    transition: .3s;
+    border-radius: 2px;
+}
+
+.right-side .event .btn a i {
+    transition: .3s;
+    margin-left: 7px;
+}
+
+.right-side   .event .btn a:hover i {
+    transform: translateX(8px);
+}
+
+/* ------------------ Event ------------------- */
+/* ###################################### Right Side ###################################### */
+
+@media screen and (max-width: 1024px) {
+    section {
+        width: 100vw;
+    }
+    section .container .left-side {
+        flex-basis: 75%;
+        padding: 5px;
+    }
+    section .container .right-side {
+        flex-basis: 25%;
+        padding: 10px 15px 10px 7px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section .container .left-side .bunch video, 
+    section .container .left-side .bunch img {
+        width: 100%;
+        margin: auto;
+    }
+    section .container .left-side {
+        position: relative;
+    }
+    section .container .left-side::after {
+        content: '';
+        position: absolute;
+        background-color: var(--main-blue);
+        width: 94%;
+        height: 2px;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section .container .right-side {
+        margin-top: 22px;
+    }
+    .right-side h3 {
+        margin-bottom: 10px;
+    }
+    section .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side .event {
+        width: 320px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .right-side .event {
+        width: 80%;
+    }
+    section .container .left-side .main-head {
+        font-size: 37px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .right-side .event {
+        width: 90%;
+    }
+    section .container .left-side .main-head {
+        font-size: 33px;
+    }
+}

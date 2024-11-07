@@ -1,0 +1,183 @@
+.section .head-search-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.section .head-search-div .search-div {
+    width: 310px;
+}
+
+.section .head-search-div .search-div label {
+    font-weight: 600;
+}
+
+.section .head-search-div .search-div input {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* ----------- */
+
+.section .message {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.section .message::after {
+    content: "";
+    background-color: var(--main-blue);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+}
+
+.section .message .datetime {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.section .message .message-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .message .message-head h1 {
+    color: var(--main-grey);
+    font-size: 30px;
+    text-align: center;
+}
+
+.section .message .message-head h1 q {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+.section .message .message-head button {
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #f7919c;
+    color: #611018;
+    background-color: #f7bcc1;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.section .message .infos {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 14px;
+}
+
+.section .message .infos .subject-span {
+    grid-column: 1/3;
+}
+
+.section .message .infos .msg-span {
+    grid-column: 1/3;
+    min-height: 150px;
+}
+
+.section .message .infos span {
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.section .message .infos span b {
+    margin-bottom: 5px;
+}
+
+.section .message .infos span ul {
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .section .head-search-div {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    .section .head-search-div .search-div {
+        margin-top: 10px;
+    }
+
+    .section .message .message-head h1 {
+        color: var(--main-grey);
+        font-size: 27px;
+    }
+    .section .message .message-head h1 q {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .section .message .message-head {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .section .message .message-head button {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .section .message .message-head h1 q {
+        overflow-wrap: anywhere;
+    }
+    .section .message .infos span:first-child {
+        overflow-wrap: anywhere;
+    }
+    .section .message .infos span:nth-child(5) {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .actions {
+        padding: 0 !important;
+    }
+    .section {
+        padding: 15px 0 !important;
+    }
+
+    .section .message .infos span b {
+        font-size: 17px;
+    }
+    .section .message .infos span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section .message .infos {
+        grid-template-columns: 100%;
+    }
+    .section .message .infos .subject-span {
+        grid-column: unset;
+    }
+    .section .message .infos .msg-span {
+        grid-column: unset;
+    }
+}

@@ -1,0 +1,97 @@
+section {
+    width: 90vw;
+    margin: 30px auto 50px auto;
+}
+
+section .main-head {
+    font-size: 30px;
+}
+
+/* ---------------------------- Form and Map head container ---------------------------- */
+
+.form-map-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* ************ Form container ************ */
+
+.form-container {
+    flex-basis: 52%;
+    padding: 0 20px;
+}
+
+.form-container div {
+    margin-top: 18px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+.form-container div label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-container div input, .form-container div textarea {
+    padding: 6px 12px;
+    width: 100%;
+    outline: none;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-container .send-div {
+    position: relative;
+}
+
+.form-container div button {
+    padding: 6px 20px;
+    /* margin-top: 20px; */
+    outline: none;
+    border: 1px solid var(--main-grey);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--main-blue);
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-container .send-div .loading-gif {
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 16px;
+    display: none;
+}
+
+/* ************ Map container ************ */
+
+.map-container {
+    flex-basis: 48%;
+    padding-top: 18px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .form-map-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form-container {
+        padding: 0;
+    }
+}

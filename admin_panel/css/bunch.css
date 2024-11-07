@@ -1,0 +1,86 @@
+h1 q {
+    color: var(--main-blue);
+    font-size: 35px;
+    font-family: 'Baloo 2', cursive;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+form input, textarea {
+    display: block;
+    margin-top: 10px;
+}
+
+form .file-div .loading-bar {
+    margin-top: 20px;
+    display: none;
+}
+
+form .file-div .loading-bar .outter {
+    border: 1px solid #000;
+    width: 70vw;
+    height: 25px;
+    position: relative;
+    border-radius: 5px;
+}
+
+form .file-div .loading-bar .outter .inner {
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--main-blue);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+form .file-div, form .description-div {
+    margin-top: 20px;
+}
+
+form .head-div input, form .description-div textarea {
+    display: block;
+    width: 70vw;
+    margin-top: 4px;
+    padding: 6px 12px 6px 12px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form .description-div textarea {
+    /* width: 70vw; */
+    height: 220px;
+}
+
+form .btn button {
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+
+@media screen and (max-width: 425px) {
+
+    form .head-div input, form .description-div textarea {
+        width: 100%;
+    }
+}

@@ -1,0 +1,143 @@
+/* --------------------- Section START ------------------------ */
+
+section {
+    width: 80vw;
+    margin: 30px auto 50px auto;
+}
+
+section .head {
+    font-size: 30px;
+}
+
+form {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+
+form .input-div {
+    margin-top: 25px;
+}
+
+form .labels {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+form input[type=text], form input[type=number] {
+    padding: 6px 12px;
+    width: 90%;
+    outline: none;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+form textarea {
+    padding: 6px 12px;
+    width: 90%;
+    outline: none;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+form .checkbox-div h6 {
+    font-size: 20px;
+}
+
+form .checkbox-div label {
+    margin-left: 6px;
+    font-size: 17px;
+}
+
+form .checkbox-div div {
+    margin-top: 5px;
+}
+
+form .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* form .submit-btn {
+    padding: 8px 20px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--main-blue);
+    color: rgb(226, 226, 226);
+    cursor: pointer;
+} */
+
+/* form .btn span {
+
+} */
+
+form .submit-btn {
+    padding: 6px 20px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid var(--main-grey);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--main-blue);
+    color: #fff;
+    cursor: pointer;
+}
+
+form .loading-gif {
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 16px;
+    display: none;
+}
+
+form .btn .clr-form-btn {
+    border: 1px solid var(--main-grey);
+    padding: 7px 14px;
+    color: var(--main-blue);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+
+/* --------------------- Section END ------------------------ */
+
+
+
+/* ****************** Media Queries Work **************** */
+
+@media screen and (max-width: 600px) {
+    section {
+        width: 92vw;
+    }
+    form {
+        grid-template-columns: 98%;
+    }
+    form input[type=text], form input[type=number] {
+        width: 100%;
+    }
+    form textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        width: 90vw;
+    }
+}

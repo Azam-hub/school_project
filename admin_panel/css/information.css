@@ -1,0 +1,76 @@
+.actions {
+    margin-top: 10px;
+}
+
+.actions form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+
+.actions form div {
+    padding: 16px;
+}
+
+.actions form label {
+    font-size: 17px;
+}
+
+.actions form textarea, .actions form input {
+    display: block;
+    border: 2px solid #000;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.actions form button {
+    cursor: pointer;
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+/* .first-para-div textarea {
+    display: block;
+    border: 2px solid #000;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 4px;
+    font-size: 16px;
+} */
+
+
+@media screen and (max-width: 650px) {
+    .actions form textarea {
+        width: 213%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .actions form {
+        grid-template-columns: 100%;
+    }
+    .actions form textarea {
+        width: 100%;
+    }
+    .skip {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .actions {
+        padding: 0 !important;
+    }
+    .section {
+        padding: 15px 0 !important;
+    }
+}

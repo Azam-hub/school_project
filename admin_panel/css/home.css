@@ -1,0 +1,189 @@
+/* Modal Work */
+
+.head-main-container.add-modal-active .black-bg,
+.head-main-container.add-modal-active .add-modal {
+    display: unset;
+}
+
+.head-main-container.edit-modal-active .black-bg,
+.head-main-container.edit-modal-active .edit-modal {
+    display: unset;
+}
+
+.black-bg {
+    width: 100vw;
+    height: 100%;
+    background-color: #242424bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-blue);
+    /* background-color: rgb(131, 131, 131); */
+    padding: 20px 18px;
+    width: 600px;
+    z-index: 5;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    display: none;
+}
+
+.modal .icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+} 
+
+.modal form {
+    margin-top: 10px;
+}
+
+.modal input {
+    width: 80%;
+    display: block;
+    font-size: 15px;
+    padding: 6px 10px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.modal .btn {
+    position: relative;
+}
+
+.modal .btn button {
+    padding: 5px 18px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal .btn .loading-gif {
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 12px;
+    display: none;
+}
+
+/* Modal Work */
+
+.main-content .section div a {
+    padding: 7px 12px;
+    background-color: var(--main-blue);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.actions .email-div {
+    margin-top: 13px;
+}
+
+.actions .email-div .table-container {
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.actions .email-div table {
+    border-collapse: collapse;
+    width: 540px;
+}
+
+.active, .pending {
+    position: relative;
+}
+
+.active span, .pending span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+.active span {
+    background-color: rgb(24, 167, 24);
+}
+
+.pending span {
+    background-color: rgb(33, 104, 196);
+}
+
+.actions .email-div table td, .actions .email-div table th {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.actions .email-div table button {
+    padding: 5px 12px;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.actions .email-div table .del-btn {
+    color: #fff;
+    background-color: #d80012;
+}
+
+.actions .email-div table .edit-btn {
+    background-color: var(--main-blue);
+    color: #fff;
+}
+
+.actions .email-div p {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.actions .password-change-div {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 615px) {
+    .modal {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .actions-td .del-btn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modal input {
+        width: 100%;
+    }
+}

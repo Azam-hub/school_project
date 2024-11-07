@@ -1,0 +1,71 @@
+/* purple : rgba(34,17,119) 
+grey : rgba(65,69,70)
+white
+*/
+
+:root {
+    --main-blue: rgb(34,17,119);
+    --main-grey: rgb(65,69,70);
+    --main-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.msg {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.msg .left .icon {
+    font-size: 26px;
+    transform: translateY(3px);
+}
+
+.msg .right p {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.danger-msg {
+	color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.success-msg {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.primary-msg {
+	color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+/* Section Padding */
+
+.main-content .section {
+    padding: 15px;
+}
+
+.main-content .section .actions {
+    padding: 0 10px;
+}
+
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+textarea:focus {
+
+    box-shadow: 0 0 6px 0px var(--main-blue);
+}

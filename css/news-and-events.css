@@ -1,0 +1,176 @@
+section {
+    width: 90vw;
+    margin: 30px auto 50px auto;
+}
+
+.head-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .main-head {
+    font-size: 30px;
+    align-self: flex-end;
+}
+
+section .head-part .search-div {
+    width: 310px;
+    position: relative;
+}
+
+section .head-part .search-div label {
+    font-weight: 600;
+}
+
+section .head-part .search-div .icon {
+    position: absolute;
+    bottom: 10px;
+    left: 11px;
+}
+
+section .head-part .search-div .icon::after {
+    content: "";
+    width: 1px;
+    height: 36px;
+    position: absolute;
+    top: -10px;
+    left: 26px;
+    background-color: #000;
+}
+
+section .head-part .search-div input {
+    width: 100%;
+    margin-top: 4px;
+    padding: 6px 12px 6px 47px;
+    outline: none;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 1%;
+    grid-row-gap: 24px;
+    margin-top: 28px;
+}
+
+.events .event {
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 16px 10px;
+    border-radius: 6px;
+}
+
+.event .image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.event .image img {
+    width: 100%;
+    /* 275x170 */
+}
+
+.events .event .date-time {
+    display: flex;
+    margin-top: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+.events .event .date-time i {
+    position: relative;
+    top: 0px;
+    margin-right: 8px;
+}
+
+.events .event .date-time p {
+    font-size: 12px;
+}
+
+.events .event .description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.events .event .btn a {
+    padding: 6px 13px 6px 10px;
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-grey);
+    margin-top: 12px;
+    transition: .3s;
+    border-radius: 2px;
+}
+
+.events .event .btn a i {
+    transition: .3s;
+    margin-left: 7px;
+}
+
+.events   .event .btn a:hover i {
+    transform: translateX(8px);
+}
+
+.link {
+    width: fit-content;
+    margin: 30px auto 0;
+}
+
+
+@media screen and (max-width: 950px) {
+    .events {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .events {
+        grid-template-columns: 48% 48%;
+        column-gap: 3%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .head-part {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .head-part .main-head {
+        align-self: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .events {
+        grid-template-columns: 49% 49%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .events {
+        grid-template-columns: 70%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    section .head-part .search-div {
+        width: 100%;
+    }
+    .events {
+        grid-template-columns: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .events {
+        grid-template-columns: 90%;
+    }
+}
